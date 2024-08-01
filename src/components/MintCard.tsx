@@ -21,28 +21,29 @@ import { Badge } from "./ui/badge";
 
 
 import { useAccount, useWriteContract } from 'wagmi';
-import { parseEther } from 'viem';
+import { Abi, parseEther } from 'viem';
 import { base, baseSepolia } from 'viem/chains';
 
-export const ocsbAbi = [
+export const abi = [
   {
     type: 'function',
     name: 'mint',
     inputs: [],
     outputs: [],
-    stateMutability: 'payable',
+    stateMutability: 'payable'
   },
+  {
+    type: 'function',
+    name: 'mint',
+    inputs: [],
+    outputs: [],
+    stateMutability: 'payable'
+  }
 ] as const;
 
 
 export function MintCard() {
-  const { writeContract } = useWriteContract({
-    abi: ocsbAbi,
-    address: "0x3Fa6ec9b1A9534e9EfF22e0e6938Ce375a411285",
-    functionName: 'mint',
-    args: [],
-    value: parseEther('0.000069')
-  });
+  const { writeContract } = useWriteContract();
 
   return (
     <Card className="bg-card dark:border-zinc-800/50 border-zinc-800/20 w-10/12 md:w-2/3 sm:max-w-lg w-full sm:mx-auto relative overflow-hidden">
@@ -77,8 +78,8 @@ export function MintCard() {
       <CardContent className="relative z-10">
         <div className="flex justify-center items-center text-xxs text-muted-foreground">
           <div className="flex items-center bg-card/80 p-1 rounded-full">
-            <Button variant="wide" size="icon" className="gap-1 p-8 px-16" onClick={() => writeContract({ 
-                abi: ocsbAbi,
+            <Button variant="secondary" size="icon" className="gap-1 p-8 px-16" onClick={() => writeContract({ 
+                abi,
                 address: "0x3Fa6ec9b1A9534e9EfF22e0e6938Ce375a411285",
                 chain: baseSepolia,
                 functionName: 'mint',

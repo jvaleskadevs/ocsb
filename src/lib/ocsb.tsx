@@ -26,7 +26,7 @@ export const mintOCSB = async () => {
   
   writeContract();
 } 
-*/
+
 import { useCallback } from 'react';
 import { Avatar, Name } from '@coinbase/onchainkit/identity';
 import { 
@@ -67,7 +67,7 @@ export function Mint() {
   ];
  
   return (
-    <Transaction address={address} chainId={baseSepolia.id} contracts={contracts}>
+    <Transaction address={address ?? '0xD'} chainId={baseSepolia.id} contracts={contracts}>
       <TransactionButton />
       <TransactionSponsor />
       <TransactionStatus>
@@ -77,3 +77,4 @@ export function Mint() {
     </Transaction>  
   );
 }
+*/
