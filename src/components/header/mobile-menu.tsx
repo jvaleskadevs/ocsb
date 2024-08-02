@@ -4,7 +4,7 @@ import * as React from "react";
 import Link, { LinkProps } from "next/link";
 import OnchainBalanceMobile from "@/components/hooks/read/useBalanceMobile";
 import ConnectMobileWalletButton from "@/components/connectMobileButton";
-import SummerKit from "@/public/skit.svg"
+import SummerKit from "@/public/ocsb_blue.png"
 import { SiFarcaster } from "react-icons/si";
 import { useRouter } from "next/navigation";
 import { MenuIcon } from "lucide-react";
@@ -40,7 +40,7 @@ export function MobileNav() {
       >
         <div className="flex items-center gap-1">
           <Image src={SummerKit} alt="Summer" className='w-8 contrast-150' />
-          <span className="text-2xl onchainsummer-font mt-1.5 text-foreground/90">SuMmer Kit</span>
+          <span className="text-2xl onchainsummer-font mt-1.5 text-foreground/90">ocsb</span>
         </div>
         <ScrollArea className="my-2">
           <div className="mb-1 flex justify-between items-center gap-1">
@@ -81,12 +81,13 @@ export function MobileNav() {
           <div className="flex items-center gap-1.5 justify-center mt-2">
             <Link href={siteConfig.links.farcaster} target="_blank">
               <div className="p-2 border dark:border-zinc-800/50 border-zinc-800/20 rounded-full hover:bg-accent">
-                <SiFarcaster size={18} className='text-zinc-900/95 dark:text-zinc-100 dark:hover:text-zinc-300' />
+                J. Valeska <SiFarcaster size={18} className='text-zinc-900/95 dark:text-zinc-100 dark:hover:text-zinc-300' />
               </div>
             </Link>
             <Link href={siteConfig.links.farcasterChannel} target="_blank">
+              Onchain Blocks
               <div className="p-2 border dark:border-zinc-800/50 border-zinc-800/20 rounded-full hover:bg-accent">
-                <SiFarcaster size={18} className='text-zinc-900/95 dark:text-zinc-100 dark:hover:text-zinc-300' />
+                 <SiFarcaster size={18} className='text-zinc-900/95 dark:text-zinc-100 dark:hover:text-zinc-300' />
               </div>
             </Link>
             {/*

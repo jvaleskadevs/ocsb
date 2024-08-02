@@ -14,7 +14,7 @@ export const metadata = {
       url: siteConfig.url,
     },
   ],
-  creator: "SummerKit",
+  creator: "OnchainSummerBlocks",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -37,6 +37,6 @@ export const metadata = {
     creator: siteConfig.twitterUsername,
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/ocsb_blue.png",
   },
 };

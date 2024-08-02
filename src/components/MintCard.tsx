@@ -68,10 +68,10 @@ export function MintCard() {
               </Link>
             </span>
           </CardTitle>
-          <CardDescription className="text-xs text-foreground py-2">
-           Mint Onchain Summer Blocks and celebrates the Summer.
+          <CardDescription className="text-s text-foreground py-2">
+           Mint your Onchain Summer Blocks and celebrates the summer with us.
             <br />
-            Only available on Summer, may or may not evolve over the time.
+           OCSB is exclusively available every onchain summer, it may or may not evolve over time.
           </CardDescription>
         </div>
       </CardHeader>

@@ -12,7 +12,7 @@ const Home = () => (
   <>
     <main className="flex flex-col items-center justify-center bg-blue-700">
       <div className="w-full flex justify-center items-center p-4 gap-4 flex-col">
-        <h1 className="font-bold text-5xl sm:text-7xl onchainsummer-font mt-16">
+        <h1 className="font-bold text-5xl sm:text-7xl onchainsummer-font mt-16 tracking-wide hover:tracking-tight">
           onchain <br /> summer <br /> blocks <br /> {/*<span className="text-yellow-400 text-7xl font-bold">OCSB</span>*/}
         </h1>
         {/*
@@ -25,65 +25,66 @@ const Home = () => (
       <div className="w-full flex-col justify-center space-y-4 mt-auto pt-16 pb-20">
         <MintCard />
       </div>
-      <div id="explore" className="w-full sm:max-w-lg flex justify-center items-center p-4 gap-4 flex-col">
+      <div id="explore" className="w-full sm:max-w-sm md:max-w-lg flex justify-center items-center p-4 gap-4 flex-col">
         <p className="onchainsummer-font text-3xl">explore ocsb</p>
-        <div className="w-full sm:max-w-lg flex flex-row justify-center bg-card/80 rounded-md p-4 gap-4">
+        {/*<div className="w-full sm:max-w-lg flex flex-row justify-center bg-card/80 rounded-md p-4 gap-4">*/}
+        <div className="flex flex-row justify-center bg-card/80 rounded-md p-4 gap-4">
           <Image
             src="/sample.svg"
-            width={142}
-            height={142}
+            width={80}
+            height={80}
             alt="Iteration sample."
           />
           <Image
             src="/sample_1.svg"
-            width={142}
-            height={142}
+            width={80}
+            height={80}
             alt="Iteration sample."
           />
           <Image
             src="/sample_2.svg"
-            width={142}
-            height={142}
+            width={80}
+            height={80}
             alt="Iteration sample."
           />
         </div>
         <div className="flex flex-row justify-center bg-card/80 rounded-md p-4 gap-4">
           <Image
             src="/sample_2.svg"
-            width={142}
-            height={142}
+            width={80}
+            height={80}
             alt="Iteration sample."
           />
           <Image
             src="/sample_1.svg"
-            width={142}
-            height={142}
+            width={80}
+            height={80}
             alt="Iteration sample."
           />
           <Image
             src="/sample.svg"
-            width={142}
-            height={142}
+            width={80}
+            height={80}
             alt="Iteration sample."
           />
         </div>
         <div className="flex flex-row justify-center bg-card/80 rounded-md p-4 gap-4">
           <Image
             src="/sample_1.svg"
-            width={142}
-            height={142}
+            width={80}
+            height={80}
             alt="Iteration sample."
           />
           <Image
             src="/sample_2.svg"
-            width={142}
-            height={142}
+            width={80}
+            height={80}
             alt="Iteration sample."
           />
           <Image
             src="/sample.svg"
-            width={142}
-            height={142}
+            width={80}
+            height={80}
             alt="Iteration sample."
           />
         </div>
