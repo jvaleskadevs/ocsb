@@ -84,6 +84,12 @@ export function MobileNav() {
                 <SiFarcaster size={18} className='text-zinc-900/95 dark:text-zinc-100 dark:hover:text-zinc-300' />
               </div>
             </Link>
+            <Link href={siteConfig.links.farcasterChannel} target="_blank">
+              <div className="p-2 border dark:border-zinc-800/50 border-zinc-800/20 rounded-full hover:bg-accent">
+                <SiFarcaster size={18} className='text-zinc-900/95 dark:text-zinc-100 dark:hover:text-zinc-300' />
+              </div>
+            </Link>
+            {/*
             <Link href={siteConfig.links.twitter} target="blank">
               <div className="p-2 border dark:border-zinc-800/50 border-zinc-800/20 rounded-full hover:bg-accent">
                 <PiXLogoFill size={18} className="text-zinc-900/95 dark:text-zinc-100 dark:hover:text-zinc-300" />
@@ -99,6 +105,7 @@ export function MobileNav() {
                 <BiLogoTelegram size={18} className="text-zinc-900/95 dark:text-zinc-100 dark:hover:text-zinc-300" />
               </div>
             </Link>
+            */}
             <ModeToggle />
           </div>
         </ScrollArea>

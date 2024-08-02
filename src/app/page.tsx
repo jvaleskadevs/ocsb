@@ -87,7 +87,7 @@ const Home = () => (
             alt="Iteration sample."
           />
         </div>
-          <Link href="https://" target="_blank">
+          <Link href="https://opensea.io/collection/onchain-summer-blocks" target="_blank">
             <p className="onchainsummer-font text-xl">see all</p>
           </Link>
       </div>

@@ -56,12 +56,12 @@ export function MintCard() {
               {/*<Image src={Summer} alt="Summer" width={22} height={22} className="ml-1.5 contrast-150" />*/}
             </span>
             <span className="space-x-1 ml-1">
-               <Link href="https://coinbase.wallet/ocs" target="blank">
+               <Link href="https://wallet.coinbase.com/ocs" target="blank">
                 <Badge className="dark:bg-zinc-800 hover:dark:bg-zinc-800/50 hover:bg-zinc-800/50 bg-zinc-400 dark:text-zinc-100 text-zinc-800">
                   Onchain Summer
                 </Badge>
               </Link>
-              <Link href="https://onchainblocks.vercel.app" target="blank">
+              <Link href="https://onchain-blocks.vercel.app" target="blank">
                 <Badge className="bg-blue-500 hover:bg-blue-500/50 dark:text-zinc-100 text-zinc-800">
                   Onchain Blocks
                 </Badge>
@@ -69,9 +69,9 @@ export function MintCard() {
             </span>
           </CardTitle>
           <CardDescription className="text-xs text-foreground py-2">
-           Mint your Onchain Summer Blocks and enjoy the Summer.
+           Mint Onchain Summer Blocks and celebrates the Summer.
             <br />
-            This collection is only available on Summer and may or may not evolve over the time.
+            Only available on Summer, may or may not evolve over the time.
           </CardDescription>
         </div>
       </CardHeader>
