@@ -77,8 +77,19 @@ export function MobileNav() {
                 Bridge
               </Button>
             </MobileLink>
+            <Link href={siteConfig.links.farcaster} target="_blank">
+              <div className="p-2 border dark:border-zinc-800/50 border-zinc-800/20 rounded-full hover:bg-accent">
+                J. Valeska <SiFarcaster size={12} className='text-zinc-900/95 dark:text-zinc-100 dark:hover:text-zinc-300' />
+              </div>
+            </Link>
+            <Link href={siteConfig.links.farcasterChannel} target="_blank">
+              <div className="p-2 border dark:border-zinc-800/50 border-zinc-800/20 rounded-full hover:bg-accent">
+                 Onchain Blocks <SiFarcaster size={12} className='text-zinc-900/95 dark:text-zinc-100 dark:hover:text-zinc-300' />
+              </div>
+            </Link>
           </div>
           <div className="flex items-center gap-1.5 justify-center mt-2">
+            {/*
             <Link href={siteConfig.links.farcaster} target="_blank">
               <div className="p-2 border dark:border-zinc-800/50 border-zinc-800/20 rounded-full hover:bg-accent">
                 J. Valeska <SiFarcaster size={18} className='text-zinc-900/95 dark:text-zinc-100 dark:hover:text-zinc-300' />
@@ -89,8 +100,7 @@ export function MobileNav() {
               <div className="p-2 border dark:border-zinc-800/50 border-zinc-800/20 rounded-full hover:bg-accent">
                  <SiFarcaster size={18} className='text-zinc-900/95 dark:text-zinc-100 dark:hover:text-zinc-300' />
               </div>
-            </Link>
-            {/*
+            </Link>           
             <Link href={siteConfig.links.twitter} target="blank">
               <div className="p-2 border dark:border-zinc-800/50 border-zinc-800/20 rounded-full hover:bg-accent">
                 <PiXLogoFill size={18} className="text-zinc-900/95 dark:text-zinc-100 dark:hover:text-zinc-300" />

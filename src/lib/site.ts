@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Onchain Summer Blocks",
   title: "Onchain Summer Blocks",
-  twitterUsername: "@",
+  twitterUsername: "@j-valeska (farcaster)",
   version: "v0",
   url: "https://ocsb.vercel.app/",
   logo: "https://ocsb.vercel.app/ocsb_blue.png",
@@ -11,6 +11,8 @@ export const siteConfig = {
   links: {
     farcaster: "https://warpcast.com/j-valeska",
     farcasterChannel: "https://warpcast.com/~/channel/onchain-blocks",
+    onchainSummer: "https://wallet.coinbase.com/ocs",
+    onchainBlocks: "https://onchain-blocks.vercel.app",
     twitter: "https://twitter.com/",
     discord: "https://discord.gg/",
     telegram: "https://t.me/",

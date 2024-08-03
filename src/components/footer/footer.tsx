@@ -12,7 +12,7 @@ const Footer = () => {
     <div className='w-full border-t dark:border-zinc-800/50 border-zinc-800/20'>
       <footer className="w-full max-w-6xl mx-auto">
         <div className="flex justify-between items-center p-2.5 px-4">
-          <div className='hidden md:flex items-center gap-1'>
+          <div className='hidden sm:flex items-center gap-1'>
             <BlockNumber />
             <WETHPrice />
           </div>

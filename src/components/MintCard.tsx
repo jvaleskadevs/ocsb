@@ -56,22 +56,22 @@ export function MintCard() {
               {/*<Image src={Summer} alt="Summer" width={22} height={22} className="ml-1.5 contrast-150" />*/}
             </span>
             <span className="space-x-1 ml-1">
-               <Link href="https://wallet.coinbase.com/ocs" target="blank">
+               <Link href={siteConfig.links.onchainSummer} target="blank">
                 <Badge className="dark:bg-zinc-800 hover:dark:bg-zinc-800/50 hover:bg-zinc-800/50 bg-zinc-400 dark:text-zinc-100 text-zinc-800">
                   Onchain Summer
                 </Badge>
               </Link>
-              <Link href="https://onchain-blocks.vercel.app" target="blank">
+              <Link href={siteConfig.links.onchainBlocks} target="blank">
                 <Badge className="bg-blue-500 hover:bg-blue-500/50 dark:text-zinc-100 text-zinc-800">
                   Onchain Blocks
                 </Badge>
               </Link>
             </span>
           </CardTitle>
-          <CardDescription className="text-s text-foreground py-2">
-           Mint your Onchain Summer Blocks and celebrates the summer with us.
+          <CardDescription className="text-s text-foreground py-4">
+           Mint your Onchain Summer Blocks and celebrate the Onchain Summer with the Onchain Blocks community and J. Valeska on Base 💙️
             <br />
-           OCSB is exclusively available every onchain summer, it may or may not evolve over time.
+       
           </CardDescription>
         </div>
       </CardHeader>
@@ -87,10 +87,13 @@ export function MintCard() {
                 value: parseEther('0.000069') 
              })}>
               <p className="text-foreground text-3xl sm:text-5xl onchainsummer-font">mint ocsb</p>
-            </Button>
+            </Button>            
           </div>
         </div>
       </CardContent>
+      <div className="w-full flex pt-0 py-4 justify-center">
+        <small>* OCSB is an exclusive collection only available on Summer</small>
+      </div>
     </Card>
   );
 }
