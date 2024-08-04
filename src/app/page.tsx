@@ -50,19 +50,19 @@ const Home = () => (
         </div>
         <div className="flex flex-row justify-center bg-card/80 rounded-md p-4 gap-4">
           <Image
-            src="/sample_2.svg"
+            src="/sample_4.svg"
             width={80}
             height={80}
             alt="Iteration sample."
           />
           <Image
-            src="/sample_1.svg"
+            src="/sample_3.svg"
             width={80}
             height={80}
             alt="Iteration sample."
           />
           <Image
-            src="/sample.svg"
+            src="/sample_5.svg"
             width={80}
             height={80}
             alt="Iteration sample."

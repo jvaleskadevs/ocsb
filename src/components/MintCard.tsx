@@ -80,8 +80,8 @@ export function MintCard() {
           <div className="flex items-center bg-card/80 p-1 rounded-full">
             <Button variant="secondary" size="icon" className="gap-1 p-8 px-16" onClick={() => writeContract({ 
                 abi,
-                address: "0x58Ef1762137A69557CfD318fEB836aF1c94f939C",
-                chain: baseSepolia,
+                address: "0x00Dc94a238eB106E560f98944E60B3B0C7245821",
+                chain: base,
                 functionName: 'mint',
                 args: [],
                 value: parseEther('0.000069') 
