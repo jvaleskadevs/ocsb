@@ -9,6 +9,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import CustomConnectButton from "@/components/connectButton";
 import Summer from "@/public/sample.svg";
 import { siteConfig } from "@/lib/site";
 import Link from "next/link";
@@ -16,10 +17,6 @@ import CardImage from "@/public/summercard.png";
 import { RefreshCcw } from "lucide-react";
 import { RiGithubLine } from "react-icons/ri";
 import { Badge } from "./ui/badge";
-
-//import { Mint } from "@/lib/ocsb";
-
-
 import { useAccount, useWriteContract } from 'wagmi';
 import { Abi, parseEther } from 'viem';
 import { base, baseSepolia } from 'viem/chains';
@@ -44,6 +41,7 @@ export const abi = [
 
 export function MintCard() {
   const { writeContract } = useWriteContract();
+  const { address } = useAccount();
 
   return (
     <Card className="bg-card dark:border-zinc-800/50 border-zinc-800/20 w-10/12 md:w-2/3 sm:max-w-lg w-full sm:mx-auto relative overflow-hidden">
@@ -78,6 +76,7 @@ export function MintCard() {
       <CardContent className="relative z-10">
         <div className="flex justify-center items-center text-xxs text-muted-foreground">
           <div className="flex items-center bg-card/80 p-1 rounded-full">
+           { address ? 
             <Button variant="secondary" size="icon" className="gap-1 p-8 px-16" onClick={() => writeContract({ 
                 abi,
                 address: "0x00Dc94a238eB106E560f98944E60B3B0C7245821",
@@ -87,7 +86,9 @@ export function MintCard() {
                 value: parseEther('0.000069') 
              })}>
               <p className="text-foreground text-3xl sm:text-5xl onchainsummer-font">mint ocsb</p>
-            </Button>            
+            </Button> 
+            : <CustomConnectButton /> 
+          }           
           </div>
         </div>
       </CardContent>
