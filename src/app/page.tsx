@@ -95,16 +95,16 @@ const Home = () => (
       <div className="flex flex-col sm:flex-row items-center gap-2 p-16">
           <Image
             src="/ocsb_blue.png"
+            alt="Iteration sample."
             width={160}
             height={160}
-            alt="Iteration sample."
           /> 
            & 
           <Image
             src="/ob_logo_white.png"
+            alt="Iteration sample."
             width={160}
             height={160}
-            alt="Iteration sample."
           />
           
       </div>
