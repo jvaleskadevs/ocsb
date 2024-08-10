@@ -93,14 +93,14 @@ const Home = () => (
           </Link>
       </div>
       <div className="flex flex-col sm:flex-row items-center gap-2 p-16">
-          <Image
+          <img
             src="/ocsb_blue.png"
             alt="Iteration sample."
             width={160}
             height={160}
           /> 
            & 
-          <Image
+          <img
             src="/ob_logo_white.png"
             alt="Iteration sample."
             width={160}

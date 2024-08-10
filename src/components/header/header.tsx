@@ -1,8 +1,8 @@
 "use client";
 
-import Image from 'next/image';
+//import Image from 'next/image';
 import CustomConnectButton from '../connectButton';
-import Summer from "@/public/ocsb_blue.png";
+//import Summer from "@/public/";
 //import BaseSymbol from "@/public/base-brand-kit/wordmark/Base_Wordmark_Blue.svg";
 import OnchainBalance from '@/components/hooks/read/useBalance';
 import { NavMenu } from './nav-menu';
@@ -16,7 +16,7 @@ const Header = () => {
       <header className="sticky top-0 z-50 w-full max-w-6xl mx-auto">
         <nav className="flex justify-between items-center p-2">
           <div className="flex items-center gap-1 ml-1.5">
-            <Image src={Summer} alt="Summer" width={42} height={42} className=' contrast-150' />
+            <img src="/ocsb_blue.png" alt="Summer" width={42} height={42} className=' contrast-150' />
             <div className="flex flex-col text-foreground/95">
               <span className="leading-1 tracking-wide text-2xl onchainsummer-font">ocsb</span>
               <span className="items-center text-sm font-semibold flex -mt-1.5 leading-3">
